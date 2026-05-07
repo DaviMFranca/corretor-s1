@@ -61,7 +61,7 @@ console.log("FILE:", req.file)
   const { title, location, price, type, description } = req.body
 
   const image = req.file
-  ? `http://localhost:5000/uploads/${req.file.filename}`
+  ? `https://corretor-backend.onrender.com/uploads/${req.file.filename}`
   : ""
 
   db.run(

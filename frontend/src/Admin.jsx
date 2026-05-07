@@ -34,7 +34,7 @@ for (let key in form) {
 
 data.append("image", image)
 
-    await axios.post("http://localhost:5000/properties", data)
+    await axios.post("https://corretor-backend.onrender.com/properties", data)
 
     alert("Imóvel cadastrado!")
   }

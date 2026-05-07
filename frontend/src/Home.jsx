@@ -13,7 +13,7 @@ function Home() {
 
   useEffect(() => {
 
-    axios.get("http://localhost:5000/properties")
+    axios.get("https://corretor-backend.onrender.com/properties")
       .then(res => setProperties(res.data))
 
   }, [])

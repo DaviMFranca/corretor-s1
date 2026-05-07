@@ -8,7 +8,7 @@ function Details() {
   const [property, setProperty] = useState(null)
 
   useEffect(() => {
-    axios.get("http://localhost:5000/properties")
+    axios.get("https://corretor-backend.onrender.com/properties")
       .then(res => {
         const found = res.data.find(p => p.id == id)
         setProperty(found)
