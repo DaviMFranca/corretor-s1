@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-import Map from "./Map"
+
 
 function Home() {
 
@@ -124,11 +124,7 @@ function Home() {
 
       {/* GRID */}
 
-      <div style={{ padding: "40px" }}>
-
-  <Map properties={properties} />
-
-</div>
+      
       <div className="container">
 
         <div className="grid">
