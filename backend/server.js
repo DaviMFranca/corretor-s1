@@ -7,8 +7,9 @@ const sqlite3 = require("sqlite3").verbose()
 const app = express()
 
 app.use(cors({
-  origin: "*"
+  origin: "https://corretor-s1.vercel.app"
 }))
+
 app.use(express.json())
 app.use("/uploads", express.static("uploads"))
 
