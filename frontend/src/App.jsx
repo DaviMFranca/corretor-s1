@@ -1,16 +1,15 @@
 import { Routes, Route } from "react-router-dom"
+
 import Home from "./Home"
-import Details from "./Details"
 import Admin from "./Admin"
-import Login from "./Login"
+import Details from "./Details"
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/imovel/:id" element={<Details />} />
       <Route path="/admin" element={<Admin />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/details/:id" element={<Details />} />
     </Routes>
   )
 }
